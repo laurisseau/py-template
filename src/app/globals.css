@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.landing-page {
+  height: 100%;
+  background: linear-gradient(to bottom right, #FBBF24 50%, #111111 50%);
+  /*background-image: url("");*/
+  text-align: center;
+  padding: 50px;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.submit-button{
+  background-color: #1A89C4; 
+}
+
+.submit-button:hover {
+  background-color: #166FA2; 
+}
+
+.instagram .fab {
+  font-size:33px;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-tiktok {
+  font-size:30px;
+  color: #111111;
+}
+
+.youtube {
+  font-size:30px;
+  background-color: #FF0000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.facebook {
+  font-size:30px;
+  background-color: #1877F2;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/*
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.068));
+  z-index: 1;
+}
+*/
+
+.landing-page .content {
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+
+.red{
+  border: 1px solid red;
+}
